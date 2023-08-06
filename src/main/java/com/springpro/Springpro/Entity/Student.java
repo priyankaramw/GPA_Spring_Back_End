@@ -17,6 +17,17 @@ public class Student {
     @GeneratedValue
     private int id;
 
+    @Column(name = "first_name")
+    private String firstName;
+    private String lastName;
+    private String nameWithInitial;
+    private String email;
+    private String mobile;
+    private String university;
+    private String degreeProgram;
+    private int noOfSemesters;
+    private int yearAtSignup;
+
     @Column(name = "ST_MARK")
     private int mark;
 
