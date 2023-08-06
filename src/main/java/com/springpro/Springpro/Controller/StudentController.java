@@ -16,32 +16,32 @@ public class StudentController {
 
     // to insert.
     @PostMapping("/addStudent")
-    public Student postDetails(@RequestBody Student student) {
-        return studentService.saveDetails(student);
+    public Student addStudent(@RequestBody Student student) {
+        return studentService.saveStudent(student);
     }
 
     // to insert as a list.
     @PostMapping("/addStudentList")
-    public List<Student> postDetails(@RequestBody List<Student> students) {
-        return studentService.saveListDetails(students);
+    public List<Student> addStudentList(@RequestBody List<Student> students) {
+        return studentService.saveStudentList(students);
     }
 
     // to read all.
     @GetMapping("/getAllStudents")
-    public List<Student> getDetails() {
-        return studentService.getAllDetails();
+    public List<Student> getAllStudents() {
+        return studentService.getAllStudents();
     }
 
     // to get by id.
     @GetMapping("/getStudentById/{id}")
-    public Student fetchDetailsById(@PathVariable int id) {
-        return studentService.getStudentDetailsById(id);
+    public Student getStudentById(@PathVariable int id) {
+        return studentService.getStudentById(id);
     }
 
     // for update.
     @PutMapping("/updateStudent")
-    public Student updateStudentDetails(@RequestBody Student student) {
-        return studentService.updateDetails(student);
+    public Student updateStudent(@RequestBody Student student) {
+        return studentService.updateStudent(student);
     }
 
     // delete

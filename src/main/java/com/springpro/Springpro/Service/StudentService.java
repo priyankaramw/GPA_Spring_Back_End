@@ -2,6 +2,7 @@ package com.springpro.Springpro.Service;
 
 import com.springpro.Springpro.Entity.Student;
 import com.springpro.Springpro.Repository.StudentRepo;
+import jakarta.persistence.Column;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,33 +16,41 @@ public class StudentService {
     private StudentRepo studentRepo;
 
     // to insert single record.
-    public Student saveDetails(Student student) {
+    public Student saveStudent(Student student) {
         return studentRepo.save(student);
     }
 
     // to insert list.
-    public List<Student> saveListDetails(List<Student> students) {
+    public List<Student> saveStudentList(List<Student> students) {
         return studentRepo.saveAll(students);
     }
 
     // to read all.
-    public List<Student> getAllDetails() {
+    public List<Student> getAllStudents() {
         return studentRepo.findAll();
     }
 
     // for getting details by id.
-    public Student getStudentDetailsById(int id) {
+    public Student getStudentById(int id) {
         return studentRepo.findById(id).orElse(null);
     }
 
     // for update.
-    public Student updateDetails(Student student) {
-        Student updateStudent = studentRepo.findById(student.getId()).orElse(null);
-        if (updateStudent != null) {
-            updateStudent.setMark(student.getMark());
-            updateStudent.setName(student.getName());
-            studentRepo.save(updateStudent);
-            return updateStudent;
+    public Student updateStudent(Student student) {
+        Student tempStudent = studentRepo.findById(student.getId()).orElse(null);
+        if (tempStudent != null) {
+            tempStudent.setFirstName(student.getFirstName());
+            tempStudent.setLastName(student.getLastName());
+            tempStudent.setNameWithInitials(student.getNameWithInitials());
+            tempStudent.setEmail(student.getEmail());
+            tempStudent.setMobile(student.getMobile());
+            tempStudent.setUniversity(student.getUniversity());
+            tempStudent.setDegreeProgram(student.getDegreeProgram());
+            tempStudent.setNoOfSemesters(student.getNoOfSemesters());
+            tempStudent.setYearAtSignup(student.getYearAtSignup());
+
+            studentRepo.save(tempStudent);
+            return tempStudent;
         }
         return null;
     }
