@@ -39,15 +39,17 @@ public class StudentService {
     public Student updateStudent(Student student) {
         Student tempStudent = studentRepo.findById(student.getId()).orElse(null);
         if (tempStudent != null) {
-            tempStudent.setFirstName(student.getFirstName());
-            tempStudent.setLastName(student.getLastName());
-            tempStudent.setNameWithInitials(student.getNameWithInitials());
+            tempStudent.setNameFirst(student.getNameFirst());
+            tempStudent.setNameLast(student.getNameLast());
+            tempStudent.setNameInitials(student.getNameInitials());
             tempStudent.setEmail(student.getEmail());
             tempStudent.setMobile(student.getMobile());
             tempStudent.setUniversityId(student.getUniversityId());
             tempStudent.setDegreeId(student.getDegreeId());
+            tempStudent.setRegistrationNo(student.getRegistrationNo());
             tempStudent.setSemesterCount(student.getSemesterCount());
             tempStudent.setYearAtSignup(student.getYearAtSignup());
+            tempStudent.setAccessLevel(student.getAccessLevel());
 
             studentRepo.save(tempStudent);
             return tempStudent;

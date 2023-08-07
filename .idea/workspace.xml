@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc680a14-be40-472f-9f2b-2250c1be099f" name="Changes" comment="Created Student, Subject Record tables." />
+    <list default="true" id="dc680a14-be40-472f-9f2b-2250c1be099f" name="Changes" comment="Error corrected.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Repository/DegreeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Repository/ResultRecordRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Repository/SubjectRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Repository/UniversityRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Service/DegreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/ResultRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/ResultRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Entity/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springpro/Springpro/Service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/ResultRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/ResultRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Entity/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springpro/Springpro/Service/StudentService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691424465186</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Error corrected.">
+      <created>1691424654240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691424654240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +171,7 @@
     <MESSAGE value="Controller" />
     <MESSAGE value="New" />
     <MESSAGE value="Created Student, Subject Record tables." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Student, Subject Record tables." />
+    <MESSAGE value="Error corrected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Error corrected." />
   </component>
 </project>

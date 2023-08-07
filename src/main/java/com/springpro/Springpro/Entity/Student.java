@@ -17,14 +17,14 @@ public class Student {
     @GeneratedValue
     private int id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "name_first")
+    private String nameFirst;
 
-    @Column(name = "last_name")
-    private String lastName;
+    @Column(name = "name_last")
+    private String nameLast;
 
     @Column(name = "name_initials")
-    private String nameWithInitials;
+    private String nameInitials;
 
     @Column(name = "email")
     private String email;

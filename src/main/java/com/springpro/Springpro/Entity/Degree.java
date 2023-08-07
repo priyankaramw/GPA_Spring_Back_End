@@ -18,7 +18,7 @@ public class Degree {
     private int id;
 
     @Column(name = "university_id")
-    private int universityName;
+    private int universityId;
 
     @Column(name = "faculty")
     private String faculty;

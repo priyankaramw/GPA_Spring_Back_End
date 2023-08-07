@@ -23,7 +23,7 @@ public class ResultRecord {
     @Column(name = "semester_id")
     private int semesterId;
 
-    @Column(name = "subject_id")
+    @Column(name = "subject_id") // Keep empty if changed manually.
     private int subjectId;
 
     @Column(name = "subject_code")

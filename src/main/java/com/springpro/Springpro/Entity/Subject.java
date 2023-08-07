@@ -35,4 +35,10 @@ public class Subject {
     @Column(name = "default_credits")
     private int defaultCredits;
 
+    @Column(name = "is_approved")
+    private boolean isApproved;
+
+    @Column(name = "approved_by_id")
+    private int approvedById;
+
 }
