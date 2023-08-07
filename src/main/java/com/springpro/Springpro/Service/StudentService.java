@@ -44,9 +44,9 @@ public class StudentService {
             tempStudent.setNameWithInitials(student.getNameWithInitials());
             tempStudent.setEmail(student.getEmail());
             tempStudent.setMobile(student.getMobile());
-            tempStudent.setUniversity(student.getUniversity());
-            tempStudent.setDegreeProgram(student.getDegreeProgram());
-            tempStudent.setNoOfSemesters(student.getNoOfSemesters());
+            tempStudent.setUniversityId(student.getUniversityId());
+            tempStudent.setDegreeId(student.getDegreeId());
+            tempStudent.setSemesterCount(student.getSemesterCount());
             tempStudent.setYearAtSignup(student.getYearAtSignup());
 
             studentRepo.save(tempStudent);
