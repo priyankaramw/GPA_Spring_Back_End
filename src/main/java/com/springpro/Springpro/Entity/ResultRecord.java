@@ -23,6 +23,9 @@ public class ResultRecord {
     @Column(name = "semester_id")
     private int semesterId;
 
+    @Column(name = "subject_id")
+    private int subjectId;
+
     @Column(name = "subject_code")
     private String subjectCode;
 
@@ -33,7 +36,7 @@ public class ResultRecord {
     private String grade;
 
     @Column(name = "credits")
-    private String credits;
+    private int credits;
 
     @Column(name = "should_exclude")
     private boolean shouldExclude;

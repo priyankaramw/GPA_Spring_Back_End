@@ -18,13 +18,13 @@ public class Subject {
     private int id;
 
     @Column(name = "university_id")
-    private String universityId;
+    private int universityId;
 
     @Column(name = "degree_id")
-    private String degreeId;
+    private int degreeId;
 
     @Column(name = "semester_id")
-    private String semesterId;
+    private int semesterId;
 
     @Column(name = "subject_code")
     private String subjectCode;
@@ -33,6 +33,6 @@ public class Subject {
     private String subjectName;
 
     @Column(name = "default_credits")
-    private String defaultCredits;
+    private int defaultCredits;
 
 }
