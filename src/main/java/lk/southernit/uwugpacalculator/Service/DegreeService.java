@@ -39,6 +39,7 @@ public class DegreeService {
         if (tempDegree != null) {
 
             tempDegree.setDepartment(degree.getDepartment());
+            tempDegree.setAddedById(degree.getAddedById());
             tempDegree.setFaculty(degree.getFaculty());
             tempDegree.setDegreeCode(degree.getDegreeCode());
             tempDegree.setDegreeName(degree.getDegreeName());

@@ -17,6 +17,9 @@ public class University {
     @GeneratedValue
     private int id;
 
+    @Column(name = "added_by_id")
+    private int addedById;
+
     @Column(name = "university_name")
     private String universityName;
 
@@ -25,8 +28,5 @@ public class University {
 
     @Column(name = "country_code")
     private int countryCode;
-
-    @Column(name = "added_by_id")
-    private int addedById;
 
 }

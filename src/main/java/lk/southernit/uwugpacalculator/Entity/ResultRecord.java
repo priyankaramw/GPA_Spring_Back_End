@@ -1,6 +1,7 @@
 package lk.southernit.uwugpacalculator.Entity;
 
 import jakarta.persistence.*;
+import lk.southernit.uwugpacalculator.Resources.Const;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,10 +18,10 @@ public class ResultRecord {
     @GeneratedValue
     private int id;
 
-    @Column(name = "student_id")
+    @Column(name = "student_id", nullable = false)
     private int studentId;
 
-    @Column(name = "semester_id")
+    @Column(name = "semester_id", nullable = false)
     private int semesterId;
 
     @Column(name = "subject_id") // Keep empty if changed manually.
@@ -32,13 +33,16 @@ public class ResultRecord {
     @Column(name = "subject_name")
     private String subjectName;
 
-    @Column(name = "grade")
+    @Column(name = "grade", nullable = false)
     private String grade;
 
-    @Column(name = "credits")
-    private int credits;
+    @Column(name = "credits", nullable = false)
+    private String credits;
 
     @Column(name = "should_exclude")
     private boolean shouldExclude;
+
+
+//    double x = Const.A_PLUS;
 
 }

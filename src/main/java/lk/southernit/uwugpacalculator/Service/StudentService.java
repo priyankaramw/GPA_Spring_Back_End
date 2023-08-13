@@ -43,11 +43,14 @@ public class StudentService {
             tempStudent.setEmail(student.getEmail());
             tempStudent.setMobile(student.getMobile());
             tempStudent.setUniversityId(student.getUniversityId());
-            tempStudent.setDegreeId(student.getDegreeId());
+            tempStudent.setDegree(student.getDegree());
+//            tempStudent.setDegreeId(student.getDegreeId());
             tempStudent.setRegistrationNo(student.getRegistrationNo());
             tempStudent.setSemesterCount(student.getSemesterCount());
             tempStudent.setYearAtSignup(student.getYearAtSignup());
             tempStudent.setAccessLevel(student.getAccessLevel());
+            tempStudent.setHasCustomWeights(student.isHasCustomWeights());
+            tempStudent.setInvitedById(student.getInvitedById());
 
             studentRepo.save(tempStudent);
             return tempStudent;
